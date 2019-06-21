@@ -6,3 +6,7 @@ def index(request):
 def pipeline(request):
 
     return render(request, 'pipeline.html', {})
+
+def missingvalues(reqeust):
+
+    return render(reqeust, 'missing_values.html', {})
