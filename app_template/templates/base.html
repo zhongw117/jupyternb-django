@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="{% static 'images/favicon.png' %}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+{#    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>#}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+{#  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>#}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
@@ -13,9 +15,23 @@
 
 <div class="jumbotron text-center">
   <h1>Machine Learning Projects List</h1>
-  <p>More contentsni will be coming soon!</p>
+  <p>More projects will be coming soon!</p>
 </div>
-  
+
+<div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-sm-2 col-md-2 col-lg-2">
+                <a href="pipeline" class="col col-sm-2 col-md-2 col-lg-2">Pipeline</a>
+            </div>
+            <div class="col col-sm-2 col-lg-2">
+                <a href="missingvalues" class="col col-sm-2 col-md-2 col-lg-2">MissingValues</a>
+            </div>
+            <div class="col col-sm-2 col-lg-2">
+                <a href="/" class="col col-sm-2 col-md-2 col-lg-2">Home</a>
+            </div>
+        </div>
+    </div>
+
 {% block content%}
 
 {% endblock %}
